@@ -8,14 +8,12 @@
     <version>0.0.1-SNAPSHOT</version>
     <packaging>war</packaging>
 
-    <name>Store Management</name>
     <description>Simple store management project - Web Service</description>
 
     <parent>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-starter-parent</artifactId>
-        <version>1.3.2.RELEASE</version>
-        <relativePath/> <!-- lookup parent from repository -->
+        <groupId>hu.klayton.wade.sm</groupId>
+        <artifactId>parent</artifactId>
+        <version>0.0.1-SNAPSHOT</version>
     </parent>
 
     <properties>
