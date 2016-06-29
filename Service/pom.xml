@@ -3,7 +3,6 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>hu.klayton.wade.sm</groupId>
     <artifactId>store-management-soap-service</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>war</packaging>
@@ -45,9 +44,9 @@
 
         <!-- CXF for web service -->
         <!--<dependency>-->
-            <!--<groupId>org.apache.cxf</groupId>-->
-            <!--<artifactId>cxf-core</artifactId>-->
-            <!--<version>${cxf.version}</version>-->
+        <!--<groupId>org.apache.cxf</groupId>-->
+        <!--<artifactId>cxf-core</artifactId>-->
+        <!--<version>${cxf.version}</version>-->
         <!--</dependency>-->
         <dependency>
             <groupId>org.apache.cxf</groupId>
@@ -55,9 +54,9 @@
             <version>${cxf.version}</version>
         </dependency>
         <!--<dependency>-->
-            <!--<groupId>org.apache.cxf</groupId>-->
-            <!--<artifactId>cxf-rt-transports-http</artifactId>-->
-            <!--<version>${cxf.version}</version>-->
+        <!--<groupId>org.apache.cxf</groupId>-->
+        <!--<artifactId>cxf-rt-transports-http</artifactId>-->
+        <!--<version>${cxf.version}</version>-->
         <!--</dependency>-->
 
         <!-- Persistence -->

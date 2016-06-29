@@ -10,9 +10,9 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import javax.jws.WebService;
-import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
+import java.util.stream.Collectors;
 
 /**
  * @author Walter Krix <wkrix89@gmail.hu>
@@ -44,10 +44,7 @@ public class ProductServiceImpl implements ProductService {
     @Override
     public List<ProductDTO> findAll() {
         final List<Product> products = productRepository.findAll();
-        final List<ProductDTO> productDTOs = new ArrayList<>();
-        for (Product product : products) {
-            productDTOs.add(ProductDTO.createDTO(product));
-        }
+        final List<ProductDTO> productDTOs = products.stream().map(ProductDTO::createDTO).collect(Collectors.toList());
         return productDTOs;
     }
 
